@@ -15,6 +15,8 @@ export default class Login {
     const formAdmin = this.document.querySelector(`form[data-testid="form-admin"]`)
     formAdmin.addEventListener("submit", this.handleSubmitAdmin)
   }
+
+  /* On change l'élément du DOM que l'on sélectionne pour récupérer l'input des employées */
   handleSubmitEmployee = e => {
     e.preventDefault()
     const user = {

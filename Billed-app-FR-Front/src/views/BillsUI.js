@@ -19,12 +19,8 @@ const row = (bill) => {
     `)
   }
 
-/*const rows = (data) => {
-  console.log(data)
-  return (data && data.length) ? data.map(bill => row(bill)).join("") : ""
-  
-}*/
 
+/* On utilise la méthode .sort afin de trier les dates */
 const rows = (data) => {
   return data && data.length
     ? data

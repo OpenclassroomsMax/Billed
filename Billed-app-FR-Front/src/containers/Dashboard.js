@@ -145,9 +145,11 @@ export default class {
       this.counter ++
     }
 
+    /*Code fournis */
     /*bills.forEach(bill => {
       $(`#open-bill${bill.id}`).click((e) => this.handleEditTicket(e, bill, bills))
     })*/
+
     /*Au lieu d'utiliser la méthode click() on utilise la méthode on() de type click
     et la méthode off() de type click va supprimer l'ancienne événement click*/
     bills.forEach(bill => {

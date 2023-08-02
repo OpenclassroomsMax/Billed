@@ -19,7 +19,7 @@ import router from "../app/Router.js";
 
 jest.mock("../app/store", () => mockStore)
 
-
+/* Ajout du expect qui manque*/
 describe("Given I am connected as an employee", () => {
   describe("When I am on Bills Page", () => {
     test("Then bill icon in vertical layout should be highlighted", async () => {
@@ -40,6 +40,7 @@ describe("Given I am connected as an employee", () => {
       expect(iconActive).toBeTruthy()
 
     })
+  /* Ajout du test d'intégration GET */
   describe("When an error occurs on API", () => {
     beforeEach(() => {
       jest.spyOn(mockStore, "bills")
